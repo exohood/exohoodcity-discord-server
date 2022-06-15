@@ -1,0 +1,57 @@
+{
+	"name": "Exohood City",
+	"version": "1.0.0",
+	"description": "A powerful library for interacting with Exohood City Discord Server",
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"test": "turbo run test && vitest run",
+		"lint": "turbo run lint",
+		"format": "turbo run format",
+		"fmt": "turbo run format",
+		"postinstall": "is-ci || husky install",
+		"docs": "turbo run docs",
+		"changelog": "turbo run changelog",
+		"update": "yarn upgrade-interactive"
+	},
+	"contributors": [
+		"JJ Uzumaki",
+		"Ela Kuromi",
+
+	],
+	"keywords": [
+		"discord",
+		"api",
+		"bot",
+		"client",
+		"node",
+		"discordapp"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/exohood/exohood-exohoodcity-discord-server"
+	},
+	"bugs": {
+		"url": "https://github.com/exohood/exohoodcity-discord-server/issues"
+	},
+	"homepage": "https://exohood.org",
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.2",
+		"@commitlint/config-angular": "^17.0.0",
+		"@favware/npm-deprecate": "^1.0.4",
+		"c8": "^7.11.3",
+		"conventional-changelog-cli": "^2.2.2",
+		"husky": "^8.0.1",
+		"is-ci": "^3.0.1",
+		"prettier": "^2.6.2",
+		"turbo": "^1.2.16",
+		"vitest": "^0.14.1"
+	},
+	"engines": {
+		"node": ">=16.9.0"
+	},
+	"workspaces": [
+		"packages/*"
+	],
+	"packageManager": "yarn@3.2.1"
+}
