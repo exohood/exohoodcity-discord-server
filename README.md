@@ -1,1 +1,2 @@
-# exohood-exohoodcity-discord-server
+![Title](exocity.png)
+# Under Construction 🚧
